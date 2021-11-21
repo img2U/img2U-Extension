@@ -2,14 +2,14 @@
   "name": "img2Ü",
   "description": "This Extension can convert images in web pages into text.",
   "version": "1.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "options_page": "options.html",
   "background": {
     "service_worker": "background.js"
   },
 
-  "permissions": [ "storage", "activeTab", "scripting" ],
-  "action": {
+  "permissions": [ "storage", "activeTab", "management" ],
+  "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "/images/icon2.png",
@@ -24,6 +24,14 @@
     "48": "/images/icon2.png",
     "128": "/images/icon2.png"
 
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens popup.html"
   }
 
 }
