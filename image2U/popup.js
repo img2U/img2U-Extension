@@ -1,5 +1,5 @@
 //Welcome Message
-var msg1 = new SpeechSynthesisUtterance("Now you can start to convert image to text! Please click or use the ctrl key to start.");
+var msg1 = new SpeechSynthesisUtterance("control키를 사용하여 extension을 시작하세요");
 window.speechSynthesis.speak(msg1);
 
 //mouse event
@@ -8,13 +8,13 @@ document.getElementById("myBtn").onclick = function () { displaytext() };
 function displaytext() {
     if (document.getElementById("myBtn").innerHTML == 'End') {
         document.getElementById("myBtn").innerHTML = 'Start';
-        var msg = new SpeechSynthesisUtterance("Please click or use the ctrl key to start.");
+        var msg = new SpeechSynthesisUtterance("control키를 사용하여 extension을 시작하세요");
         window.speechSynthesis.speak(msg);
         document.getElementById("result").innerHTML = '';
     }
     else{
         document.getElementById("myBtn").innerHTML = 'End';
-        var msg1 = new SpeechSynthesisUtterance("The result is being output. Please click or use the ctrl key to end.");
+        var msg1 = new SpeechSynthesisUtterance("extension이 작동 중입니다. 웹 페이지를 사용하세요");
         var msg_result = new SpeechSynthesisUtterance("Read the result.");
         window.speechSynthesis.speak(msg1);
 
@@ -35,13 +35,13 @@ function keydown(event) {
         case 17:
             if (document.getElementById("myBtn").innerHTML == 'End') {
                 document.getElementById("myBtn").innerHTML = 'Start';
-                var msg = new SpeechSynthesisUtterance("Please click or use the ctrl key to start.");
+                var msg = new SpeechSynthesisUtterance("control키를 사용하여 extension을 시작하세요");
                 window.speechSynthesis.speak(msg);
                 document.getElementById("result").innerHTML = '';
             }
             else {
                 document.getElementById("myBtn").innerHTML = 'End';
-                var msg1 = new SpeechSynthesisUtterance("The result is being output. Please click or use the ctrl key to end.");
+                var msg1 = new SpeechSynthesisUtterance("결과 출력 중입니다. 잠시만 기다려주세요.");
                 var msg_result = new SpeechSynthesisUtterance("Read the result.");
                 window.speechSynthesis.speak(msg1);
 
@@ -51,3 +51,7 @@ function keydown(event) {
 
     }
 }
+
+
+
+///////////////////////////////////////////////////////

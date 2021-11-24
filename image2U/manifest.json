@@ -7,8 +7,16 @@
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts":[
+    {
+      "matches":["https://*/*"],
+      "js":["jquery-3.2.1.min.js","content.js"],
+      "css":["main.css"],
+      "run_at":"document_idle"
+    }
+  ],
 
-  "permissions": [ "storage", "activeTab", "management" ],
+  "permissions": [ "storage", "activeTab", "management","contextMenus" ,"tabs"],
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -32,6 +40,6 @@
         "mac": "MacCtrl+Shift+F"
       },
       "description": "Opens popup.html"
+    }
   }
-
 }
