@@ -1,7 +1,9 @@
 //Welcome Message
-var msg1 = new SpeechSynthesisUtterance("control키를 사용하여 extension을 시작하세요");
+var msg1 = new SpeechSynthesisUtterance("Ctrl+Shift+F를 눌러 이 창을 닫은 다음 Tab 키를 눌러 이미지 변환 시작하십시오.");
 window.speechSynthesis.speak(msg1);
 
+////////////////////////////////////////////////////////////////
+//Deleted button operation
 //mouse event
 document.getElementById("myBtn").onclick = function () { displaytext() };
 
