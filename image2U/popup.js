@@ -1,5 +1,5 @@
 //Welcome Message
-var msg1 = new SpeechSynthesisUtterance("Ctrl+Shift+F를 눌러 이 창을 닫은 다음 Tab 키를 눌러 이미지 변환 시작하십시오.");
+var msg1 = new SpeechSynthesisUtterance("이미지투유 extension이 작동 중입니다. Ctrl, Shift, F키 를 눌러 이 창을 닫고, Tab 키로 웹 페이지를 사용하세요.");
 window.speechSynthesis.speak(msg1);
 
 ////////////////////////////////////////////////////////////////
