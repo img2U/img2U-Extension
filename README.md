@@ -1,6 +1,6 @@
 ## 이미지 캡셔닝을 이용한 크롬 확장프로그램(Extension) img2U
 
-:arrows_counterclockwise:	**update@2021.12.21**
+:arrows_counterclockwise:	**updated@2021.12.21**
 
 ![img2U Logo](https://github.com/img2U/img2U-Extension/blob/main/image2U/images/logo1.png?raw=true)
 
